@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yuhao.mapper.StudentMapper">
+    <!--resultType:自动映射-->
+    <!--<select id="selectUserBySno" resultType="com.dayuan.atm.entity.Student">-->
+        <!--select * from student where sno = #{sno}-->
+    <!--</select>-->
+
+    <!--手动映射（推荐使用）-->
+    <resultMap id="baseStudent" type="com.yuhao.entity.Student">
+        <id column="id" property="id"/>
+        <result column="sno" property="sno"/>
+        <result column="sname" property="sname"/>
+        <result column="ssex" property="ssex"/>
+        <result column="sbirthday" property="sbirthday"/>
+        <result column="cclass" property="cclass"/>
+        <result column="pwd" property="pwd"/>
+        <result column="balance" property="balance"/>
+        <result column="version" property="version"/>
+    </resultMap>
+    <update id="updateBalanceBySno">
+        update student set balance=#{balance} where sno=#{sno }
+    </update>
+
+    <update id="updateBalanceById">
+        update student set balance=#{balance} where id=#{id }
+    </update>
+
+    <select id="getBySno" resultMap="baseStudent">
+        select * from student where sno=#{sno};
+    </select>
+    <select id="getBySnoWithLock" resultMap="baseStudent">
+        SELECT * from student where sno=#{sno} for update
+    </select>
+
+    <select id="getByIdWithLock" resultMap="baseStudent">
+        SELECT * from student where id=#{id} for update
+    </select>
+
+    <select id="listStudent" resultMap="baseStudent">
+        SELECT * from student
+    </select>
+
+
+</mapper>
+
