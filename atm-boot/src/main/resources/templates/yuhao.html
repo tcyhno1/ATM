@@ -1,0 +1,227 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/resume.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <style id="system" type="text/css">
+        h1, h2, h3, h4, h5, h6, p, blockquote {
+            margin: 0;
+            padding: 0;
+        }
+
+        @media screen and (min-width: 768px) {
+            body {
+                width: 768px;
+                margin: 10px auto;
+            }
+        }
+    </style>
+    <style id="custom" type="text/css"></style>
+</head>
+
+<body marginheight="0">
+<div id="pdf_container">
+    <div style="margin-top:10px">
+        <b class="big">
+            个人简历
+        </b>
+        <b class="right" id="name">于昊</b>
+        <button id="renderPdf" onclick="makeMpdf()" class="button button-rounded button-tiny"
+                style="margin-left: 30px;font-size: 12px;background: rgb(250,250,250);">
+            <span style="font-weight: bold;">导出pdf</span>
+        </button>
+
+
+    </div>
+    <hr class="top">
+    <div>
+        <div class="part">
+            <h1>
+                <img src="imgs/personalInformation.png" class="personalResumeIcon">
+                <span class="span">个人信息</span>
+            </h1>
+            <ul>
+                <li>
+                    <img src="imgs/person.png" class="resumeIcon2">
+                    <span>
+                     于昊 / 男 / 1994.12.17
+                    </span>
+
+                </li>
+                <li>
+                    <img src="imgs/study.png" class="resumeIcon2">
+                    <span>
+                       本科 / 晋中学院
+                </span>
+
+                </li>
+                <li>
+                    <img src="imgs/time.png" class="resumeIcon2">
+                    <span>
+                       工作年限：1年
+                </span>
+                </li>
+                <li>
+                    <img src="imgs/work2.png" class="resumeIcon2">
+                    <span>
+                      期望职位：Java开发工程师
+                </span>
+
+                </li>
+
+                <li>
+                    <img src="imgs/city.png" class="resumeIcon2">
+                    <span>
+                          期望城市：北京
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <div class="part">
+            <h1>
+                <img src="imgs/personalPhone.png" class="personalResumeIcon">
+                <span class="span">联系方式</span>
+            </h1>
+            <ul>
+                <li>
+                    <img src="imgs/phone.png" class="resumeIcon">
+                    <span>
+                     手机：13466809229
+                </span>
+
+                </li>
+                <li>
+                    <img src="imgs/email.png" class="resumeIcon">
+                    <span>
+                    Email：290173403@qq.com
+                </span>
+
+                </li>
+                <li>
+                    <img src="imgs/qq.png" class="resumeIcon">
+                    <span>
+                      QQ：290173403
+                </span>
+
+                </li>
+                <li>
+                    <img src="imgs/wechat.png" class="resumeIcon">
+                    <span>
+                      微信号：yuhao290173403
+                </span>
+
+                </li>
+
+                <li>
+                    <br>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <hr class="top clear">
+    <div>
+        <h1>
+            <img src="imgs/skills.png" class="personalResumeIcon2">
+            <span>技能清单</span>
+        </h1>
+        <ul>
+            <li>
+                <img src="imgs/java.png" class="resumeIcon2">
+                <span>
+                 J2SE / J2EE：具有扎实的Java编程功底和良好的编码习惯；
+            </span>
+            </li>
+            <li>
+                <img src="imgs/mysql.png" class="resumeIcon2">
+                <span>
+               数据库：熟悉MySql数据库和Navicat for MySQL数据库管理工具，了解sql优化；
+            </span>
+            </li>
+            <li>
+                <p>
+                    <img src="imgs/web.png" class="resumeIcon">
+                    <span>
+                         框架：熟悉Spring、SpringMVC、Mybatis、Springboot主流开源框架；
+                    </span>
+                </p>
+                <p class="left2">
+                 <span>
+                      了解dubbo+zookeeper分布式框架搭建、redis高可用框架部署、Nginx负载均衡配置；
+                </span>
+                </p>
+            </li>
+            <li>
+                <img src="imgs/css.png" class="resumeIcon2">
+                <span>
+                  前端： 具备一定的JavaScript语言基础，能够使用jQuery，Vue等前端框架进行页面的开发。
+            </span>
+            </li>
+            <li>
+                <img src="imgs/tools.png" class="resumeIcon2">
+                <span>
+                工具：熟练使用IDEA开发工具、svn/git版本管理工具、Maven项目构建工具、swagger管理API接口；
+            </span>
+            </li>
+            <li>
+                <img src="imgs/linux.png" class="resumeIcon2">
+                <span>
+                Linux：熟悉Linux下的常用操作指令、环境部署和项目发布；
+            </span>
+            </li>
+            <li>
+                <img src="imgs/test.png" class="resumeIcon2">
+                <span>
+                 测试：了解JUC并发包、能使用线程池进行高并发测试；
+            </span>
+            </li>
+            <li>
+                <img src="imgs/alipay.png" class="resumeIcon2">
+                <span>
+                第三方接口：熟悉支付宝支付接口调用、熟悉微信登录接口调用；
+            </span>
+            </li>
+        </ul>
+    </div>
+    <hr>
+    <div>
+        <h1>
+            <img src="imgs/work.png" class="personalResumeIcon">
+            <span class="span">工作经历</span>
+        </h1>
+        <h3 class="top">
+            <span class="span">山西龙兴伟业科技有限公司（2017年11月 ~ 2018年10月）</span>
+        </h3>
+        <h3>
+            <img src="imgs/project.png" class="personalResumeIconH3 left">
+            <span class="span">鑫乐动官网项目</span>
+        </h3>
+        <p class="left length">
+
+            官方网站主要是用来展示公司信息，课程安排，然后提供会员查询下载学员信息等等。
+            我参与开发了注册，登录，第三方登录模块，第三方支付模块，用户信息查询，流水查询导出等。
+        </p>
+        <h3 class="topSpan">
+            <img src="imgs/project.png" class="personalResumeIconH3 left">
+            <span class="span">后台管理项目</span>
+        </h3>
+        <p class="left length">
+            在公司期间主要参与开发了两个项目，一个是公司内部后台系统，一个是官方网站的开发搭建。
+            后台系统主要是用来进行人员管理，校区安排，教具借调管理。我主要负责开发的是员工登录模块，课程查询模块，教具调用模块等开发。
+        </p>
+    </div>
+    <hr class="top">
+    <div>
+        <h1>
+            <img src="imgs/thanks.png" class="personalResumeIcon">
+            <span class="span">致谢</span></h1>
+        <p class="topSpan left"> 感谢您花时间阅读我的简历，期待能有机会和您共事。</p>
+    </div>
+</div>
+<script src="https://cdn.bootcss.com/html2canvas/0.5.0-beta4/html2canvas.js"></script>
+<script src="https://cdn.bootcss.com/jspdf/1.3.4/jspdf.debug.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/core.js"></script>
+<script type="text/javascript" src="js/resume.js"></script>
+</body>
+</html>
